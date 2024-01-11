@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <!-- Student Email Address Section -->
+
+    <TextView
+        android:id="@+id/mainHeadinglogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/main_heading_login"
+        android:textSize="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/studentEmailHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/student_email_address_heading"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainHeadinglogin" />
+
+    <EditText
+        android:id="@+id/studentEmailBox"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentEmailHeading" />
+
+    <TextView
+        android:id="@+id/passwordHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/password_heading"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentEmailBox" />
+
+    <EditText
+        android:id="@+id/passwordBox"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordHeading" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/green1"
+        android:text="@string/login_button"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordBox"
+
+    />
+
+    <TextView
+        android:id="@+id/registerHereText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dont_have_an_account"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+    <TextView
+        android:id="@+id/registerHereText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/registerhere"
+        android:textColor="@color/blue1"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+    <Button
+        android:id="@+id/continueWithGoogleButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white1"
+        android:text="@string/continue_with_google"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textOr" />
+
+    <TextView
+        android:id="@+id/textOr"
+        android:layout_width="50dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/OR"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/continueWithGoogleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerHereText" />
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="?attr/selectableItemBackground" />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/google"
+    app:layout_constraintTop_toTopOf="@id/continueWithGoogleButton"
+    app:layout_constraintEnd_toEndOf="@id/continueWithGoogleButton"
+    app:layout_constraintBottom_toBottomOf="@id/continueWithGoogleButton"
+    app:layout_constraintStart_toEndOf="@id/continueWithGoogleButton"
+    android:layout_marginStart="-24dp"
+    android:layout_marginEnd="8dp"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
